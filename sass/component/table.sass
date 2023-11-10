@@ -1,0 +1,14 @@
+@use "../base/color" as color 
+//zebra table
+.table-zebra 
+    border-collapse: collapse
+    width: 100%
+    border: none
+    th, td 
+        padding: 8px
+        text-align: left
+    tr:nth-child(even)
+        background-color: color.$primary-soft
+    th
+        background-color: color.$primary
+        color: color.$white

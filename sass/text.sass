@@ -1,0 +1,76 @@
+@use './base/color' as color
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap")
+html
+    font-family: "Roboto", sans-serif
+    font-size: 16px //it is the rem value
+.fm 
+    &-primary
+        font-family: "Roboto", sans-serif
+    &-secondary
+        font-family: "Roboto", sans-serif
+.fs 
+    &-xs 
+        font-size: 0.5rem
+    &-sm 
+        font-size: 0.8rem
+    &-md
+        font-size: 1rem
+    &-lg
+        font-size: 1.5rem
+    &-xl
+        font-size: 2rem
+    &-xxl
+        font-size: 3rem
+    &-hero 
+        font-size: 4rem
+.fw 
+    &-bold 
+        font-weight: bold
+    &-normal
+        font-weight: normal
+    &-light
+        font-weight: lighter
+/* text transform */
+.uppercase 
+    text-transform: uppercase
+.lowercase
+    text-transform: lowercase
+/* text color  */
+.txt-primary
+    color: color.$primary
+.txt-secondary
+    color: color.$secondary
+.txt-white
+    color: color.$white
+.txt-black
+    color: color.$black
+.txt-success
+    color: color.$success
+.txt-info
+    color: color.$info
+.txt-warning
+    color: color.$warning
+.txt-danger
+    color: color.$danger
+.txt-light
+    color: color.$light
+.txt-dark
+    color: color.$dark
+/* wrap */
+.txt-nowarp
+    white-space: nowrap
+.txt-wrap
+    white-space: wrap
+/* align */
+.txt-center
+    text-align: center
+.txt-left
+    text-align: left
+.txt-right
+    text-align: right
+/* ellipsis */ 
+.txt-ellipsis
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap

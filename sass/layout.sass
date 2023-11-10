@@ -1,0 +1,42 @@
+//first mobile logic
+@use './base/breakpoint' as breakpoint
+
+/* center a box, individual content */
+.center
+    &-x
+        display: flex
+        justify-content: center
+    &-xy
+        display: grid
+        place-items: center
+.container
+    width: clamp(breakpoint.$container-min, 100%, breakpoint.$container-max)
+    margin: 0 auto
+
+.grid
+    &-100
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(min(100px,100%), 1fr))
+    &-200
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(min(200px,100%), 1fr))
+    &-300
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(min(300px,100%), 1fr))
+    &-400
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(min(400px,100%), 1fr))
+    &-500
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(min(500px,100%), 1fr))
+.gap 
+    &-sm 
+        gap: 0.5rem
+    &-md
+        gap: 1rem
+    &-lg
+        gap: 1.5rem
+    &-xl
+        gap: 2rem
+
+    

@@ -1,0 +1,18 @@
+
+//for print option
+.hide-on-print
+    display: block
+        
+@media print
+    .hide-on-print
+        display: none
+    html,body
+        margin: 0px
+        padding: 0px
+    .container 
+        width: 100%
+        max-width: unset
+        padding: 1.5rem
+@page
+    margin: 0
+    size: portrait

@@ -1,0 +1,28 @@
+@use "../base/color" as color 
+.btn-primary
+    display: inline-block
+    color: color.$white
+    background-color: color.$primary
+    border: none 
+    text-align: center
+    vertical-align: middle
+    padding: 0.5rem 1rem
+    border-radius: 0.25rem
+    &:hover
+        background-color: color.$secondary-dark
+    &:focus
+        box-shadow: 0 0 0 1px color.$secondary
+
+.btn-secondary
+    display: inline-block
+    color: color.$white
+    background-color: color.$secondary
+    border: none 
+    text-align: center
+    vertical-align: middle
+    padding: 0.5rem 1rem
+    border-radius: 0.25rem
+    &:hover
+        background-color: color.$secondary-dark
+    &:focus
+        box-shadow: 0 0 0 1px color.$secondary
